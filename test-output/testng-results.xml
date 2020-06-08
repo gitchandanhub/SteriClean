@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="61295" started-at="2020-06-07T04:53:52 IST" finished-at="2020-06-07T04:54:53 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="61295" started-at="2020-06-07T04:53:52 IST" finished-at="2020-06-07T04:54:53 IST">
+      <class name="Execution.ExecuteRegisterUser">
+        <test-method status="PASS" signature="Initialize()[pri:0, instance:Execution.ExecuteRegisterUser@78ac1102]" name="Initialize" is-config="true" duration-ms="35304" started-at="2020-06-07T04:53:52 IST" finished-at="2020-06-07T04:54:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialize -->
+        <test-method status="PASS" signature="openregisterpage()[pri:0, instance:Execution.ExecuteRegisterUser@78ac1102]" name="openregisterpage" duration-ms="8195" started-at="2020-06-07T04:54:28 IST" finished-at="2020-06-07T04:54:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openregisterpage -->
+        <test-method status="PASS" signature="EnterDetails()[pri:1, instance:Execution.ExecuteRegisterUser@78ac1102]" name="EnterDetails" duration-ms="17292" started-at="2020-06-07T04:54:36 IST" finished-at="2020-06-07T04:54:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterDetails -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Execution.ExecuteRegisterUser@78ac1102]" name="close" is-config="true" duration-ms="34" started-at="2020-06-07T04:54:53 IST" finished-at="2020-06-07T04:54:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Execution.ExecuteRegisterUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
