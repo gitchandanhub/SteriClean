@@ -1,11 +1,14 @@
 package Pages;
 
+import java.awt.AWTException;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import BaseDriver.AppDriver;
+import Utility.NumberReader;
 
 public class RegisterUser extends AppDriver 
 {
@@ -78,6 +81,12 @@ public class RegisterUser extends AppDriver
 		zipcode.clear();
 		zipcode.sendKeys(zipc);
 	}
+	public void Enterzipcode3(String zipc ) throws AWTException
+	{
+		zipcode.clear();
+		zipcode.click();
+		NumberReader.readnum(zipc);
+	}
 	public void Enterphn(int phne)
 	{
 		phone.clear();
@@ -87,6 +96,12 @@ public class RegisterUser extends AppDriver
 	{
 		phone.clear();
 		phone.sendKeys(phne);
+	}
+	public void Enterphn2(String phne) throws AWTException
+	{
+		phone.clear();
+		phone.click();
+		NumberReader.readnum(phne);
 	}
 	public void Enteruname(String usrname)
 	{

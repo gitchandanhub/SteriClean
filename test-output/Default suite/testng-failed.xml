@@ -5,7 +5,7 @@
     <classes>
       <class name="Execution.Executetestcases">
         <methods>
-          <include name="CreateOrder"/>
+          <include name="CreateOrdercalltracker"/>
           <include name="Initialize"/>
           <include name="close"/>
         </methods>
