@@ -1,24 +1,9 @@
-10/06/2020 11:45:18 devpinoyLogger Login test Started
-10/06/2020 11:45:24 devpinoyLogger Login test Completed
-10/06/2020 11:45:24 devpinoyLogger Work order call Tracker started
-10/06/2020 11:45:41 devpinoyLogger Work order call Tracker date Selected
-10/06/2020 11:45:44 devpinoyLogger Work order call Tracker EventType Selected
-10/06/2020 11:45:45 devpinoyLogger Work order call Tracker Entered
-10/06/2020 11:45:46 devpinoyLogger Work order call Tracker phone number Entered
-10/06/2020 11:45:47 devpinoyLogger Work order call Tracker Email address Entered
-10/06/2020 11:45:48 devpinoyLogger Work order call Tracker Requested by Entered
-10/06/2020 11:45:49 devpinoyLogger Work order call Tracker number Entered
-10/06/2020 11:45:50 devpinoyLogger Work order call Tracker Email Entered
-10/06/2020 11:45:51 devpinoyLogger Work order call Tracker job address Entered
-10/06/2020 11:45:52 devpinoyLogger Work order call Tracker city Entered
-10/06/2020 11:45:52 devpinoyLogger Work order call Tracker state Entered
-10/06/2020 11:45:53 devpinoyLogger Work order call Tracker Zipcode Entered
-10/06/2020 11:45:53 devpinoyLogger Work order call Tracker case number Entered
-10/06/2020 11:45:54 devpinoyLogger Work order call Tracker reffed by selected 
-10/06/2020 11:45:55 devpinoyLogger Work order call Tracker reffed by description
-10/06/2020 11:45:57 devpinoyLogger Work order call Tracker Tech Event Entered
-10/06/2020 11:45:58 devpinoyLogger Work order call Tracker Contact made with Entered
-10/06/2020 11:45:59 devpinoyLogger Work order call Tracker comment Entered
-10/06/2020 11:45:59 devpinoyLogger Work order call Tracker Completed
-10/06/2020 11:45:59 devpinoyLogger Work order started
-10/06/2020 11:45:59 devpinoyLogger Work order Completed
+26/06/2020 11:39:47 devpinoyLogger Login test Started
+26/06/2020 11:39:52 devpinoyLogger You are successfully logged in
+26/06/2020 11:39:58 devpinoyLogger Create New Ticket Window Opened
+26/06/2020 11:40:01 devpinoyLogger Date has been entered06/25/2020
+26/06/2020 11:40:01 devpinoyLogger Job Type at position 1 has been selected
+26/06/2020 11:40:01 devpinoyLogger Priority at position 2 has been selected
+26/06/2020 11:40:01 devpinoyLogger Quote checkbix has been checked
+26/06/2020 11:40:01 devpinoyLogger Request Text has been Entered
+26/06/2020 11:40:02 devpinoyLogger Submit button has been clicked

@@ -19,6 +19,8 @@ public class Dashboard  extends AppDriver
 	
 	@FindBy (xpath = "//a[@id='Newlinkk']") WebElement newworkorder;
 	
+	@FindBy (id = "A1")  WebElement createnewticket;
+	
 	public String loggeduser()
 	{
 		String usrname = username.getText();
@@ -32,6 +34,17 @@ public class Dashboard  extends AppDriver
 		List<WebElement> list = driver.findElements(By.tagName("iframe"));
 	
 		driver.switchTo().frame(list.get(0));
+		Thread.sleep(2000);
+	}
+	
+	public void Createticket() throws InterruptedException 
+	{
+		createnewticket.click();
 		Thread.sleep(3000);
+		List<WebElement> list = driver.findElements(By.tagName("iframe"));
+	
+		driver.switchTo().frame(list.get(0));
+		Thread.sleep(2000);
+		log.info("Create New Ticket Window Opened");
 	}
 }

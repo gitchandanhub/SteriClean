@@ -21,19 +21,19 @@ public class TestNG_Listeners implements ITestListener
 
 	public void onTestSuccess(ITestResult result) {
 	System.out.println("Test was successfull "   + result.getName());
-	ExtentReportMethods.testpass();
+	ExtentReportMethods.testpass(result.getMethod());
 
 	}
 
 	public void onTestFailure(ITestResult result) {
 	System.out.println("Test was unsuccessfull because its failed "   + result.getName());
-	ExtentReportMethods.testfail();
+	ExtentReportMethods.testfail(result.getMethod());
 	}
 
 	public void onTestSkipped(ITestResult result) {
 	System.out.println("Test was skipped "   + result.getTestName());
 
-	ExtentReportMethods.testskip();
+	ExtentReportMethods.testskip(result.getMethod());
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {

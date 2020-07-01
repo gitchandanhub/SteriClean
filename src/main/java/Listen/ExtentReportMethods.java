@@ -1,26 +1,31 @@
 package Listen;
 
+import org.testng.ITestNGMethod;
+
 import com.aventstack.extentreports.Status;
 
 import BaseDriver.AppDriver;
 
 public class ExtentReportMethods extends AppDriver
 {
-	 public static void testpass()
+	 public static void testpass(ITestNGMethod iTestNGMethod)
      {
-     extenttest = extentreport.createTest("ReportTest");
+		String name =  iTestNGMethod.getMethodName();
+     extenttest = extentreport.createTest(name);
      extenttest.log(Status.PASS, "Test passed");
      }
      
-     public static void testfail()
+     public static void testfail(ITestNGMethod iTestNGMethod)
      {
-     extenttest = extentreport.createTest("ReportTest");
+    	 String name =  iTestNGMethod.getMethodName();
+     extenttest = extentreport.createTest(name);
      extenttest.log(Status.FAIL, "Test Failed");
      }
      
-     public static void testskip()
+     public static void testskip(ITestNGMethod iTestNGMethod)
      {
-     extenttest = extentreport.createTest("ReportTest");
+    	 String name =  iTestNGMethod.getMethodName();
+     extenttest = extentreport.createTest(name);
      extenttest.log(Status.SKIP, "Test skipped");
      }
 }

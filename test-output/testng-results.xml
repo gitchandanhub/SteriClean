@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48124" started-at="2020-06-10T11:45:11 IST" finished-at="2020-06-10T11:46:00 IST">
+  <suite name="Default suite" duration-ms="26448" started-at="2020-06-26T11:39:41 IST" finished-at="2020-06-26T11:40:08 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48124" started-at="2020-06-10T11:45:11 IST" finished-at="2020-06-10T11:46:00 IST">
-      <class name="Execution.Executetestcases">
-        <test-method status="PASS" signature="Initialize()[pri:0, instance:Execution.Executetestcases@a74868d]" name="Initialize" is-config="true" duration-ms="6692" started-at="2020-06-10T11:45:11 IST" finished-at="2020-06-10T11:45:18 IST">
+    <test name="Default test" duration-ms="26448" started-at="2020-06-26T11:39:41 IST" finished-at="2020-06-26T11:40:08 IST">
+      <class name="Execution.ExecuteTicket">
+        <test-method status="PASS" signature="Initialize()[pri:0, instance:Execution.ExecuteTicket@78ac1102]" name="Initialize" is-config="true" duration-ms="6160" started-at="2020-06-26T11:39:41 IST" finished-at="2020-06-26T11:39:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialize -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:Execution.Executetestcases@a74868d]" name="loginTest" duration-ms="5673" started-at="2020-06-10T11:45:18 IST" finished-at="2020-06-10T11:45:24 IST">
+        <test-method status="PASS" signature="CreateTicketNew()[pri:0, instance:Execution.ExecuteTicket@78ac1102]" name="CreateTicketNew" duration-ms="20229" started-at="2020-06-26T11:39:47 IST" finished-at="2020-06-26T11:40:08 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="CreateOrdercalltracker()[pri:1, instance:Execution.Executetestcases@a74868d]" name="CreateOrdercalltracker" duration-ms="34776" started-at="2020-06-10T11:45:24 IST" finished-at="2020-06-10T11:45:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateOrdercalltracker -->
-        <test-method status="PASS" signature="WorkOrder()[pri:2, instance:Execution.Executetestcases@a74868d]" name="WorkOrder" duration-ms="3" started-at="2020-06-10T11:45:59 IST" finished-at="2020-06-10T11:45:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WorkOrder -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Execution.Executetestcases@a74868d]" name="close" is-config="true" duration-ms="816" started-at="2020-06-10T11:45:59 IST" finished-at="2020-06-10T11:46:00 IST">
+        </test-method> <!-- CreateTicketNew -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Execution.ExecuteTicket@78ac1102]" name="close" is-config="true" duration-ms="9" started-at="2020-06-26T11:40:08 IST" finished-at="2020-06-26T11:40:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- Execution.Executetestcases -->
+      </class> <!-- Execution.ExecuteTicket -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
