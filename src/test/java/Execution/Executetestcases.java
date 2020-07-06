@@ -37,9 +37,9 @@ public class Executetestcases  extends AppDriver
     	 lpobj.EnterPassword(config.getProperty("password"));
     	 lpobj.clickLogin();
     	 Dashboard dbobj = new Dashboard();
-    	 String text = dbobj.loggeduser();
-    	 System.out.println("User is :>>  " +text);
-    	 Assert.assertEquals(text, config.getProperty("Loggedusernme"));
+    	 String text = dbobj.logoutoptiontest();
+    	 System.out.println("Available option  is :>>  " +text);
+    	 Assert.assertEquals(text, config.getProperty("Logoutoption"));
     	 log.info("Login test Completed");
      }
      @Test(priority = 1)
@@ -239,7 +239,7 @@ public class Executetestcases  extends AppDriver
     	 WorkOrder_workorder   woobj = new WorkOrder_workorder();
     	 woobj.clickworkordertab();
     	 String techni = ExcelUtility.readexcel(config.getProperty("WorkOrderFilepath"), 0, 1, 8);
-    	 woobj.selecttechnician("shiva");
+    	 woobj.selecttechnician("sshiva");
     	 String cntry = ExcelUtility.readexcel(config.getProperty("WorkOrderFilepath"), 0, 1, 13);
     	 
     	 woobj.EnterCountry(cntry);
@@ -265,7 +265,17 @@ public class Executetestcases  extends AppDriver
     	 log.info("Operations on photos tab have started");
     	 Photos phobj = new Photos();
     	 phobj.clickphototab();
+    	 
+    	 try
+    	 {
+    		 System.out.println(config.getProperty("photospath"));
+    		 phobj.choosephoto(config.getProperty("photospath"));
+    	 }
+    	 catch(Exception e)
+    	 {
+    		 System.out.println(config.getProperty("photospath2"));
     	 phobj.choosephoto(config.getProperty("photospath2"));
+    	 }
     	 log.info("Operations on photos tab have completed");
      }
      @Test(priority = 4)
@@ -281,7 +291,7 @@ public class Executetestcases  extends AppDriver
     	 catch(Exception e)
     	 {
     		 System.out.println(e);
-    		 etobj.chooseFile("D:\\eclipse_workspace\\Complete_steria\\InputFiles\\Estimate.PDF");
+    		 etobj.chooseFile("C:\\Users\\cchauhan\\git\\Strie\\InputFiles\\Estimate.PDF");
     	 }
     	 log.info("Operations on Estimate tab have Completed");
      }
@@ -341,7 +351,7 @@ public class Executetestcases  extends AppDriver
     	 }
     	 catch(Exception e) 
     	 {
-    		 rpobj.uploadfile("D:\\eclipse_workspace\\Complete_steria\\InputFiles\\Receipt.PDF");	 
+    		 rpobj.uploadfile("C:\\Users\\cchauhan\\git\\Strie\\InputFiles\\Receipt.PDF");	 
     	 }
     	 log.info("Operations on receipt tab have completed");
      }
@@ -357,7 +367,7 @@ public class Executetestcases  extends AppDriver
     	 }
     	 catch(Exception e)
     	 {
-    		 ivobj.uploadfile("D:\\eclipse_workspace\\Complete_steria\\InputFiles\\Invoice.PDF");	 
+    		 ivobj.uploadfile("C:\\Users\\cchauhan\\git\\Strie\\InputFiles\\Invoice.PDF");	 
     	 }
     	 log.info("Operations on invoice tab have completed");
     	 Thread.sleep(1000);
@@ -370,7 +380,7 @@ public class Executetestcases  extends AppDriver
     	 fmobj.clickformtab();
     	 Thread.sleep(1000);
     	 fmobj.Selectvalue(2);
-    	 fmobj.choosefile("D:\\eclipse_workspace\\Complete_steria\\InputFiles\\W-RoomDiagram-05312020001-01062020235018479.PDF");
+    	 fmobj.choosefile("C:\\Users\\cchauhan\\git\\Strie\\InputFiles\\W-RoomDiagram-05312020001-01062020235018479.PDF");
     	 log.info("Operations on form tab have completed");
      }
      @Test(priority = 11)
@@ -378,14 +388,13 @@ public class Executetestcases  extends AppDriver
      {
 		
 		  log.info("Starting form submission");
-		  Forms fmobj = new Forms();
-		  fmobj.clicksavebutton(); 
-		  String alerttext =  driver.switchTo().alert().getText();
-		  Thread.sleep(3000);
-		  System.out.println("Message after Submission ==>"   +alerttext); 
-		  Thread.sleep(3000);
-		  driver.switchTo().alert().accept(); 
-		  log.info("Completed form submission");
+		/*
+		 * Forms fmobj = new Forms(); fmobj.clicksavebutton(); String alerttext =
+		 * driver.switchTo().alert().getText(); Thread.sleep(3000);
+		 * System.out.println("Message after Submission ==>" +alerttext);
+		 * Thread.sleep(3000); driver.switchTo().alert().accept();
+		 * log.info("Completed form submission");
+		 */
 		 
      }
 }
